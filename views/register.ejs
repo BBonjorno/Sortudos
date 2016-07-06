@@ -1,0 +1,28 @@
+﻿<%- include('partials/header') %>
+<div class="form-container">
+    <h1>Sortudos BR</h1>
+    <br>
+    <h2>Registrar</h2>
+    <% if(locals.error) { %>
+        <div class="alert alert-danger"><%= error %></div>
+    <% } %>
+    <form method="post">
+        <div class="form-group">
+            <label for="name">Nome</label>
+            <input type="text" name="name" id="name" class="form-control" value="<%= locals.name || '' %>" required />
+        </div>
+        <div class="form-group">
+            <label for="username">E-mail</label>
+            <input type="mail" name="email" id="email" class="form-control" value="<%= locals.email || '' %>" required />
+        </div>
+        <div class="form-group">
+            <label for="password">Senha</label>
+            <input type="password" name="password" id="password" class="form-control" required />
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">Registrar</button>
+            <a href="/login" class="btn btn-link">Cancelar</a>
+        </div>
+    </form>
+</div>
+<%- include('partials/footer') %>

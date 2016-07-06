@@ -1,0 +1,19 @@
+<h1>Olá {{vm.user.name}}!!</h1>
+<br>
+<h2>Registrar uma aposta da Mega</h2>
+<div class="form-inline">
+    <form method="post">
+        <div class="form-group">
+            <input type="number" id="bet1" class="form-control" ng-model="vm.bet1" value="1" required />
+        </div>
+        <div class="form-group">
+            <input type="number" id="bet2" class="form-control" ng-model="vm.bet2" value="2" />
+        </div>
+        <div class="form-group">
+            <input type="number" id="bet3" class="form-control" ng-model="vm.bet3" value="3" />
+        </div>
+        <div class="form-group">
+            <button class="btn btn-primary" ng-click="vm.saveBet()">Salvar</button>
+        </div>
+    </form>
+</div>

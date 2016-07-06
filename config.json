@@ -1,0 +1,5 @@
+{
+    "connectionString": "mongodb://localhost:27017/sortudos",
+    "apiUrl": "http://localhost:80/api",
+    "secret": "sortudosBR"
+}
