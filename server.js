@@ -41,6 +41,6 @@ app.get('/', function (req, res) {
 });
 
 // start server
-app.listen(80,"localhost", function () {
-    console.log('Server listening at http://127.0.0.1:80');
+app.listen(1080,"localhost", function () {
+    console.log('Server listening at http://lolcahost:1080');
 });
