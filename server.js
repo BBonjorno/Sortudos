@@ -39,7 +39,7 @@ app.use('/mongo_express', mongo_express(mongo_express_config));
 app.get('/', function (req, res) {
     return res.redirect('/app');
 });
-
+ 
 // start server
 app.listen(1080,"localhost", function () {
     console.log('Server listening at http://lolcahost:1080');
