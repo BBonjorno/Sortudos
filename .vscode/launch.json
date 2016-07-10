@@ -41,6 +41,14 @@
             "port": 5858,
             "sourceMaps": false,
             "outDir": null
+        },
+        {
+            "name": "Launch Chrome",
+            "type": "chrome",
+            "request": "launch",
+            "port": 9222,
+            "url": "http://localhost:1080/",
+            "webRoot": "${workspaceRoot}/app/",
         }
     ]
 }
