@@ -30,10 +30,6 @@ app.use('/register', require('./controllers/register.controller'));
 app.use('/app', require('./controllers/app.controller'));
 app.use('/api/users', require('./controllers/api/users.controller'));
 
-var mongo_express = require('mongo-express/lib/middleware');
-var mongo_express_config = require('./node_modules/mongo-express/config');
-
-app.use('/mongo_express', mongo_express(mongo_express_config));
 
 // make '/app' default route
 app.get('/', function (req, res) {
@@ -42,5 +38,5 @@ app.get('/', function (req, res) {
  
 // start server
 app.listen(1080,"localhost", function () {
-    console.log('Server listening at http://lolcahost:1080');
+    console.log('Server listening at http://localhost:1080');
 });
