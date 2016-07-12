@@ -6,6 +6,7 @@ var bodyParser = require('body-parser');
 var expressJwt = require('express-jwt');
 var config = require('config.json');
 
+require('./views/app.css');
 
 // =======================
 // check configuration =========
